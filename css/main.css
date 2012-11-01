@@ -1,0 +1,184 @@
+/* Color Palette
+Fuschia		 #ff08b1
+Mint Green	 #03dba6
+Gray Shadow  #848484
+*/
+
+/*----------------------- Main Content ------------------------------*/
+
+body{
+	width: 800px;
+	margin: 0 auto;
+	background: #000;
+	color: #fff;
+	font-family: 'Pompiere', cursive;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-family: "Kaushan Script", cursive;
+	color: #ff08b1;
+}
+
+#intro{
+	font-size: 18px;
+	text-align: center;	
+}
+
+#intro p strong{
+	text-transform: uppercase;
+}
+
+#cta{
+	background: #fff;
+	width: 200px;
+	height: 210px;
+	color: #000; 
+	float: right;
+	font: bold 16px georgia, serif;
+	text-align: center;
+	padding: 0 10px 0 0;
+}
+
+#button{
+	width: 100px;
+	height: 23px;
+	background: url(../images/button_bg_gradient.jpg);
+	border: 1px solid #000;
+	border-radius: 10px;
+	text-align: center;
+	margin: 0 0 0 50px;
+}
+#KitChoices{
+	clear: right;
+	padding: 50px 10px;
+	-moz-column-count: 3;
+	background-color: rgba(132, 132, 132, 0.25);
+}
+
+#bgimg{
+	background: url(../images/Mac-holiday-bg.jpg) #fff no-repeat center;
+	width: 590px;
+	height: 210px;
+	float: left;
+}
+
+#MyFavs aside{
+	font-size: 18px;
+	color: #03dba6;
+	text-align: center;
+}
+/*----------------------- Links ------------------------------*/
+
+a{
+	text-decoration: none;
+	color: #ff08b1;
+}
+
+a:visited{
+	color: #848484;
+}
+
+a:hover{
+	color: #03dba6;
+}
+
+a:active{
+	color: #000;
+}
+
+#button a{
+	color: #000;
+}
+
+#button a:visited{
+	color: #848484;
+}
+
+#button a:hover{
+	color: #03dba6;
+}
+
+#button a:active{
+	color: #ff08b1;
+}
+/*----------------------- Header Content ------------------------------*/
+
+#logo{
+	padding: 0;
+	float: left;	
+}
+
+header h1{
+	margin: 100px 0 50px;
+	text-align: center;
+	text-shadow: 2px 2px 3px #848484;
+}
+
+/*----------------------- Navigation ------------------------------*/
+
+nav ul{
+	width: 300px;
+	list-style-type: none;
+	padding: 0;
+	margin: 0 auto;
+	background: #000;
+	overflow: hidden;
+}
+
+nav li{
+	width: 100px;
+	float: left;
+}
+
+nav a{
+	color: #03dba6;
+	display: block;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+}
+
+nav a:visited{ 
+	color: #ff08b1;
+}
+
+nav a:hover{
+	color: #000;
+	background: #03dba6;
+}
+
+nav a:active{
+	background: #ff08b1;
+	color: #000;
+}
+
+/*----------------------- Image Gallery ------------------------------*/
+
+#gallery li{
+	float: left;
+	display: inline;
+	list-style-type: none;
+	border: 2px solid #fff;
+	border-radius: 5px;
+	margin: 0 50px 20px;
+}
+
+section article{
+	clear: left;
+}
+
+/*----------------------- Form Content ------------------------------*/
+
+#Subscribe{
+	width: 800px;
+	height: 400px;
+	background: #848484;
+	border: 3px solid #ff08b1;
+	margin: 20px 0;
+}
+
+/*----------------------- Footer Content ------------------------------*/
+
+footer{
+	text-align: center;
+}
