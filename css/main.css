@@ -52,8 +52,6 @@ h1, h2, h3, h4, h5, h6{
 	clear: right;
 	padding: 50px 1.25%;
 	-moz-column-count: 3;
-	-webkit-colum-count: 3;
-	-o-colum-count: 3;
 	background-color: rgba(36, 36, 36, 0.65);
 }
 
