@@ -7,9 +7,9 @@ Gray Shadow  #848484
 /*----------------------- Main Content ------------------------------*/
 
 body{
-	width: 800px;
+	max-width: 800px;
 	margin: 0 auto;
-	background: #000;
+	background: url(../images/texture_bg.jpg) #000;
 	color: #fff;
 	font-family: 'Pompiere', cursive;
 }
@@ -20,7 +20,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 #intro{
-	font-size: 18px;
+	font-size: 1.125em; /*18px;*/
 	text-align: center;	
 }
 
@@ -29,41 +29,44 @@ h1, h2, h3, h4, h5, h6{
 }
 
 #cta{
-	background: #fff;
-	width: 200px;
-	height: 210px;
+	background-color: rgba(255, 255, 255, 0.85);
+	width: 25%; /*200px;*/
+	height: 195px;
 	color: #000; 
 	float: right;
-	font: bold 16px georgia, serif;
+	font: bold 1em georgia, serif;
 	text-align: center;
-	padding: 0 10px 0 0;
+	padding: 15px 1.25% 0 0;
 }
 
 #button{
-	width: 100px;
+	width: 50%; /*100px;*/
 	height: 23px;
 	background: url(../images/button_bg_gradient.jpg);
 	border: 1px solid #000;
 	border-radius: 10px;
 	text-align: center;
-	margin: 0 0 0 50px;
+	margin: 0 0 0 25%;
 }
-#KitChoices{
+#kitchoices{
 	clear: right;
-	padding: 50px 10px;
+	padding: 50px 1.25%;
 	-moz-column-count: 3;
-	background-color: rgba(132, 132, 132, 0.25);
+	-webkit-colum-count: 3;
+	-o-colum-count: 3;
+	background-color: rgba(36, 36, 36, 0.65);
 }
 
 #bgimg{
 	background: url(../images/Mac-holiday-bg.jpg) #fff no-repeat center;
-	width: 590px;
+	opacity: 0.85;
+	width: 73.75%; /*590px;*/
 	height: 210px;
 	float: left;
 }
 
-#MyFavs aside{
-	font-size: 18px;
+#myfavs aside{
+	font-size: 1.125em; /*18px;*/
 	color: #03dba6;
 	text-align: center;
 }
@@ -109,7 +112,7 @@ a:active{
 }
 
 header h1{
-	margin: 100px 0 50px;
+	margin: 100px 0 6.25%;
 	text-align: center;
 	text-shadow: 2px 2px 3px #848484;
 }
@@ -117,16 +120,16 @@ header h1{
 /*----------------------- Navigation ------------------------------*/
 
 nav ul{
-	width: 300px;
+	width: 37.5%; /*300px;*/
 	list-style-type: none;
 	padding: 0;
-	margin: 0 auto;
+	margin: 0 0 0 58.875%;
 	background: #000;
 	overflow: hidden;
 }
 
 nav li{
-	width: 100px;
+	width: 33.333333333333%; /*100px;*/
 	float: left;
 }
 
@@ -160,25 +163,125 @@ nav a:active{
 	list-style-type: none;
 	border: 2px solid #fff;
 	border-radius: 5px;
-	margin: 0 50px 20px;
+	margin: 0 6.25% 20px;
 }
 
 section article{
 	clear: left;
 }
 
-/*----------------------- Form Content ------------------------------*/
+/*----------------------- Form Content ------------------------------
+	#subscribe{
+		width: 100%;
+		height: 400px;
+		background: #848484;
+		border: 3px solid #ff08b1;
+		margin: 20px 0;
+	}
+*/
 
-#Subscribe{
-	width: 800px;
-	height: 400px;
-	background: #848484;
-	border: 3px solid #ff08b1;
-	margin: 20px 0;
-}
-
-/*----------------------- Footer Content ------------------------------*/
-
+/*-------------------------Footer Content---------------------------*/
 footer{
 	text-align: center;
+}
+
+
+/*--------------------------Media Queries---------------------------*/
+
+	/*Tablet Portrait size to standard 960 (devices and browsers)*/
+	@media screen and (min-width: 768px) and (max-width: 820px) {
+		body{ 
+			max-width: 697px;
+		}
+		
+		#cta{
+			width: 25%;
+			height: 185px;
+			font-size: 0.875em;
+			padding: 25px 1.25% 0 0;
+		}	
+		
+		#bgimg{
+			width: 73.75%;
+		}
+		#button{
+			line-height: 23px;
+		}
+		
+		#gallery li{
+			margin: 0 5% 20px;
+		}
+}
+
+
+	/*Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+	@media only screen and (min-width: 493px) and (max-width: 767px) {
+		body{ 
+			max-width: 652px;
+		}
+		
+		 #cta{
+			width: 25%;
+			height: 145px;
+			font-size: 0.75em;
+			padding: 25px 1% 0 .25%;
+		}
+
+		#bgimg{
+			background: url(../images/Mac-holiday-bg.jpg) #fff no-repeat center;
+			width: 73.75%; 
+			height: 170px;
+		}
+		
+		#button{
+			line-height: 20px;
+		}
+		
+		#gallery li{
+			margin: 0 10% 20px 20%;
+		}
+}
+	/*Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 492px) {
+		body{ /*background: #aef;*/
+			max-width: 418px;
+			background: #000;
+		}
+		
+		#bgimg{
+			background: none;
+			float: none;
+			height: 0;
+		}
+		
+		#cta{
+			width: 90%;
+			height: 100px;
+			font-size: 0.8em;
+			padding: 0 5%;
+			margin: 0 auto;
+		}
+		
+		#button{
+			width: 25%;
+			line-height: 22px;
+			margin: 0 40% 0;
+		}
+		
+		header h1{
+			font-size: 1.75em;
+			margin: 75px 0 6.25%;
+			text-align: center;
+			}
+		
+		#kitchoices{
+				-moz-column-count: 1;
+				text-align: center;
+				margin: 0 auto;
+		}
+		
+		nav ul{
+			width: 50%; 
+			margin:0 0 0 55%;
+			}
 }
