@@ -1,22 +1,28 @@
 /* Color Palette
-Fuschia		 #ff08b1
+Fuschia		 #ff209c
 Mint Green	 #03dba6
 Gray Shadow  #848484
+Light Gray	 #dddddd
 */
 
 /*----------------------- Main Content ------------------------------*/
 
 body{
-	max-width: 800px;
+	max-width: 960px;
 	margin: 0 auto;
 	background: url(../images/texture_bg.jpg) #000;
-	color: #fff;
-	font-family: 'Pompiere', cursive;
+	color: #ddd;
+	font-family: 'Julius Sans One', sans-serif;
+}
+
+#wrapper{
+	width: 100%;
+	background: #000;
 }
 
 h1, h2, h3, h4, h5, h6{
 	font-family: "Kaushan Script", cursive;
-	color: #ff08b1;
+	color: #ff209c;
 }
 
 #intro{
@@ -29,7 +35,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 #cta{
-	background-color: rgba(255, 255, 255, 0.85);
+	background: #fff;
 	width: 25%; /*200px;*/
 	height: 195px;
 	color: #000; 
@@ -50,14 +56,14 @@ h1, h2, h3, h4, h5, h6{
 }
 #kitchoices{
 	clear: right;
-	padding: 50px 1.25%;
+	padding: 40px 1.25%;
 	-moz-column-count: 3;
 	background-color: rgba(36, 36, 36, 0.65);
+	text-align: center;
 }
 
 #bgimg{
 	background: url(../images/mac-holiday-bg.jpg) #fff no-repeat center;
-	opacity: 0.85;
 	width: 73.75%; /*590px;*/
 	height: 210px;
 	float: left;
@@ -68,11 +74,15 @@ h1, h2, h3, h4, h5, h6{
 	color: #03dba6;
 	text-align: center;
 }
+
+#myfavs{
+	padding: 0px 1.25%
+}
 /*----------------------- Links ------------------------------*/
 
 a{
 	text-decoration: none;
-	color: #ff08b1;
+	color: #ff209c;
 }
 
 a:visited{
@@ -100,7 +110,7 @@ a:active{
 }
 
 #button a:active{
-	color: #ff08b1;
+	color: #ff209c;
 }
 /*----------------------- Header Content ------------------------------*/
 
@@ -140,7 +150,7 @@ nav a{
 }
 
 nav a:visited{ 
-	color: #ff08b1;
+	color: #ff209c;
 }
 
 nav a:hover{
@@ -149,8 +159,14 @@ nav a:hover{
 }
 
 nav a:active{
-	background: #ff08b1;
+	background: #ff209c;
 	color: #000;
+}
+
+#topbar{
+	width: 100%;
+	height: 50px;
+	background-color: #000;	
 }
 
 /*----------------------- Image Gallery ------------------------------*/
@@ -168,16 +184,58 @@ section article{
 	clear: left;
 }
 
-/*----------------------- Form Content ------------------------------
-	#subscribe{
+/*----------------------- Form Content ------------------------------*/
+#subscribe{
 		width: 100%;
-		height: 400px;
+		height: 410px;
 		background: #848484;
-		border: 3px solid #ff08b1;
-		margin: 20px 0;
-	}
-*/
+}
 
+table{
+	float: left;
+	background: #03dba6;
+	text-align: center;
+	padding: 5px;
+	margin: 100px 0 0 1.041666666667%;
+	color: #000;
+	border-radius: 3px;
+	border-collapse: collapse;
+}
+
+th{
+	height: 50px;
+	background: #ddd;
+	font-size: 1.5em;
+}
+
+td{
+	padding: 5px;
+	width: 52%;
+}
+
+
+fieldset{
+	width: 20%;
+	float: right;
+	margin: 0 .520833333333% 0 0;
+}
+
+label{
+	text-align: left;
+	padding: 2px .520833333333%;
+}
+
+input{
+	margin: 5px 0;
+}
+
+input:focus{
+	background-color: #ffdff1;
+}
+
+select{
+	margin: 0 0 10px 0;
+}
 /*-------------------------Footer Content---------------------------*/
 footer{
 	text-align: center;
@@ -187,9 +245,9 @@ footer{
 /*--------------------------Media Queries---------------------------*/
 
 	/*Tablet Portrait size to standard 960 (devices and browsers)*/
-	@media screen and (min-width: 768px) and (max-width: 820px) {
+	@media screen and (min-width: 800px) and (max-width: 960px) {
 		body{ 
-			max-width: 697px;
+			max-width: 816px;
 		}
 		
 		#cta{
@@ -209,19 +267,47 @@ footer{
 		#gallery li{
 			margin: 0 5% 20px;
 		}
+		
+		#subscribe{
+			width: 100%;
+			height: 540px;
+			padding: 20px 0;
+		}
+		
+		table{
+			float: none;
+			margin: 0 auto;
+		}		
+
+		fieldset{
+			width: 50%;
+			float: none;
+			clear: left;
+			margin: 25px 25%;
+		}
 }
 
 
 	/*Mobile Landscape Size to Tablet Portrait (devices and browsers) */
-	@media only screen and (min-width: 493px) and (max-width: 767px) {
+	@media only screen and (min-width: 493px) and (max-width: 799px) {
 		body{ 
-			max-width: 652px;
+			max-width: 680px;
+			font-size: 0.875em;
+		}
+		
+		nav ul{
+			width: 50%; 
+			margin:0 0 0 50%;
+		}
+
+		#intro{
+			margin: 0 1.5625%; 
 		}
 		
 		 #cta{
 			width: 25%;
 			height: 145px;
-			font-size: 0.75em;
+			font-size: 0.8em;
 			padding: 25px 1% 0 .25%;
 		}
 
@@ -235,15 +321,60 @@ footer{
 			line-height: 20px;
 		}
 		
+		#kitchoices{
+				-moz-column-count: 2;
+				text-align: center;
+				margin: 0 auto;
+		}
+		
 		#gallery li{
 			margin: 0 10% 20px 20%;
 		}
+		
+		#subscribe{
+			width: 100%;
+			height: 540px;
+			padding: 20px 0;
+		}
+		
+		table{
+			float: none;
+			margin: 0 auto;
+		}		
+
+		fieldset{
+			width: 60%;
+			float: none;
+			clear: left;
+			margin: 25px 25%;
+		}
+		
+		footer{
+			text-align: center;
+			font-size: 0.75em;
+		}
+
 }
 	/*Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 	@media only screen and (max-width: 492px) {
 		body{ /*background: #aef;*/
 			max-width: 418px;
-			background: #000;
+			font-size: 0.8125em;
+		}
+		
+		#logo{
+			padding: 0;
+			float: left;
+			width: 35%;	
+		}
+		
+		nav ul{
+			width: 50%; 
+			margin:0 0 0 40%;
+		}
+		
+		nav li{
+			font-size: 0.875em;
 		}
 		
 		#bgimg{
@@ -254,8 +385,8 @@ footer{
 		
 		#cta{
 			width: 90%;
-			height: 100px;
-			font-size: 0.8em;
+			height: 90px;
+			font-size: 0.9em;
 			padding: 0 5%;
 			margin: 0 auto;
 		}
@@ -278,8 +409,30 @@ footer{
 				margin: 0 auto;
 		}
 		
-		nav ul{
-			width: 50%; 
-			margin:0 0 0 55%;
-			}
+		#gallery li{
+			margin: 0 10% 20px 10%;
+		}
+		
+		#subscribe{
+			width: 100%;
+			height: 660px;
+			padding: 20px 0;
+		}
+		
+		table{
+			float: none;
+			margin: 0 auto;
+		}		
+
+		fieldset{
+			width: 50%;
+			float: none;
+			clear: left;
+			margin: 25px 25%;
+		}
+		
+		footer{
+			text-align: center;
+			font-size: 0.6875em;
+		}
 }

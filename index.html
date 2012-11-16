@@ -7,10 +7,13 @@
 		<link rel="stylesheet" href="css/main.css"/>
 		<link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Pompiere' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Julius+Sans+One' rel='stylesheet' type='text/css'>
 	</head>
 	
 	<body>
+		<div id="wrapper">
 		<header>
+			<div id="topbar">
 			<img id="logo" src="images/logoedit.png" width="173" height="50" alt="logo"/>
 					<nav>
 						<ul>
@@ -19,8 +22,10 @@
 							<li><a href="#subscribe">Subscribe</a></li>
 						</ul>
 					</nav>
+			</div>		
 				<h1>MAC Holiday Kits Have Arrived!</h1>
 		</header>
+
 		<div id="intro">
 			<p>Eeek! Scream with delight! The MAC Holiday Kits have arrived and are <strong>now</strong> available online and in stores. <a href="http://www.maccosmetics.com">Get yours</a> before they sell out!</p>
 		</div>
@@ -29,7 +34,7 @@
 	
 		<aside id="cta">
 			<p>For ideas and videos on how to create some great holiday looks using your kits, subscribe today!</p>
-			<div id="button"><a href="#Subscribe">Subscribe</a></div>
+			<div id="button"><a href="#subscribe">Subscribe</a></div>
 		</aside>
 		
 		<div id="kitchoices">
@@ -37,13 +42,13 @@
 				<h2>Choices! Choices!</h2>
 					<p> There are four different kit categories. Each with their own sets to choose from.</p>
 			<div>
-				<h4>Fabulousness (<em>Holiday Eye Kits</em>)</h4>
+				<h4>Fabulousness <br/>(<em>Holiday Eye Kits</em>)</h4>
 					<ul>
 						<li>Warm Eyes</li>
 						<li>Neutral Eyes</li>
 						<li>Smokey Eyes</li>
 					</ul>
-				<h4>Primped Out (<em>Holiday Eye, Lip & Brush Kits</em>)</h4>
+				<h4>Primped Out <br/>(<em>Holiday Eye, Lip & Brush Kits</em>)</h4>
 					<ul>
 						<li>Eye Look Bag: Sensual Peach</li>
 						<li>Eye Look Bag: Decadently Pink</li>
@@ -54,14 +59,14 @@
 						<li>Perfectly Plush Brush Kit: Advanced</li>
 						<li>Perfectly Plush Brush Kit: Essential</li>
 					</ul>
-				<h4>All for Glamour (<em>Holiday Face Kits</em>)</h4>
+				<h4>All for Glamour <br/>(<em>Holiday Face Kits</em>)</h4>
 					<ul>
 						<li>Face Kit: Gorgeous Bronze</li>
 						<li>Touch Up Kit: Medium</li>
 						<li>Touch Up Kit: Medium Dark</li>
 						<li>Touch Up Kit: Dark</li>
 					</ul>
-				<h4>Glam It Up (<em>Viva Glam Holiday Kit</em>)</h4>
+				<h4>Glam It Up <br/>(<em>Viva Glam Holiday Kit</em>)</h4>
 					<ul>
 						<li>Glam It Up Bag</li>
 					</ul>
@@ -98,12 +103,83 @@
 			</section>
 		</div>
 		
-		<div id="subscribe"></div>	
-		
+	<div id="subscribe">	
+			<table>
+			<tr>
+				<th>Limited Access</th>
+				<th>Full Access</th>
+			</tr>
+			<tr>
+				<td>Free</td>
+				<td>$1</td>
+			</tr>
+			<tr>
+				<td>Select Video Tutorials Only</td>
+				<td>All Video Tutorials</td>
+			</tr>
+			<tr>
+				<td>User Submitted Tips & Tricks</td>
+				<td>MAC Pro Submitted Tips & Tricks</td>
+			</tr>
+			<tr>
+				<td>User Community & Message Boards</td>
+				<td>Mac Pro Community & Message Boards</td>
+			</tr>
+			<tr>
+				<td>Monthly Newsletter</td>
+				<td>Monthly Newsletter & Insider Info</td>
+			</tr>
+		</table>
+	
+		<fieldset>
+			<legend>Subscribe Today!</legend>
+			<form method="get" action="form.html">
+				<div>
+					<label for="name_first">First Name</label>
+					<input type="text" name="name_first" id="name_first"/>
+				</div>
+			
+				<div>
+					<label for="name_last">Last Name</label>
+					<input type="text" name="name_last" id="name_last"/>
+				</div>
+			
+				<div>
+					<label for="phone">Phone Number</label>
+					<input type="text" name="phone" id="phone"/>
+				</div>
+			
+				<div>
+					<label for="email">Email Address</label>
+					<input type="text" name="email" id="email"/>
+				</div>
+			
+				<div>
+					<label for="password">Create Password</label>
+					<input type="password" name="password" id="password"/>
+				</div>
+				<br/>
+				<div>
+					<label for="subscription_type">Choose your subscription</label>
+				</div>
+			
+				<div>
+					<select name="subscription_type" id="subscription_type">
+						<option>Limited Access</option>
+						<option>Full Access</option>
+					</select>
+				</div>
+			
+				<div>
+					<input type="submit"/>
+				</div>
+			</form>	
+		</fieldset>		
+	</div>
 		<footer>
 			<p>These reviews are based solely on personal opinion. All Rights Reserved. &copy; 2012.</p>
 		</footer>
-			
+	</div>	
 	</body>
 
 </html>
